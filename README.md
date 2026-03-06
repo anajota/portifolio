@@ -13,6 +13,8 @@ Este é meu portfólio profissional desenvolvido com Python e Flask.
 
 Apresentar minha trajetória em tecnologia, meus projetos e minhas habilidades como desenvolvedora.
 
+Psicologia aplicada à tecnologia
+
 ## Autor
 
 Ana
