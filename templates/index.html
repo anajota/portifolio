@@ -83,21 +83,25 @@ problemas reais.
 
 <h2>Projetos</h2>
 
+{% for repo in repos %}
+
 <div class="projeto">
 
-<h3>API de Músicas Favoritas</h3>
+<h3>{{ repo.name }}</h3>
 
 <p>
-API desenvolvida em Python para gerenciar músicas favoritas.
+{{ repo.description }}
 </p>
 
-<a href="https://github.com/seuusuario">
+<a href="{{ repo.html_url }}" target="_blank">
 
 Ver projeto no GitHub
 
 </a>
 
 </div>
+
+{% endfor %}
 
 </section>
 
