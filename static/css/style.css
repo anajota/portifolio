@@ -1,52 +1,114 @@
 body{
-
-font-family: Arial;
-margin:0;
-background:#f4f4f4;
-
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    background:#f4f8fc;
+    color:#1e293b;
 }
 
+/* NAVBAR */
+
 nav{
-
-background:#222;
-padding:15px;
-
+    background:#1f69aa;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
 }
 
 nav ul{
-
-display:flex;
-gap:20px;
-list-style:none;
-
+    display:flex;
+    gap:30px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    justify-content: center;
 }
 
 nav a{
-
-color:white;
-text-decoration:none;
-
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
 }
+
+nav a:hover{
+    color:#dbeafe;
+}
+
+/* SEÇÕES */
 
 section{
-
-padding:60px;
-
+    padding:80px 10%;
 }
 
-h1,h2{
+/* HOME */
 
-color:#333;
-
+#home{
+    background:#e8f2fb;
 }
+
+.home-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.home-img img{
+    width:220px;
+    border:1px solid #1f69aa;
+}
+
+/* TITULOS */
+
+h1{
+    color:#1f69aa;
+    font-size:40px;
+}
+
+h2{
+    color:#1f69aa;
+}
+
+/* SKILLS */
+
+#skills ul{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    padding:0;
+}
+
+#skills li{
+    list-style:none;
+    background:#1f69aa;
+    color:white;
+    padding:8px 14px;
+    border-radius:6px;
+    font-size:14px;
+}
+
+/* PROJETOS */
 
 .projeto{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    margin-top:25px;
+    border-left:5px solid #1f69aa;
+    box-shadow:0px 4px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
 
-background:white;
-padding:20px;
-border-radius:8px;
-margin-top:20px;
+.projeto:hover{
+    transform:translateY(-4px);
+}
 
-box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+/* LINKS */
 
+a{
+    color:#1f69aa;
+}
+
+a:hover{
+    color:#2f7dc3;
 }
