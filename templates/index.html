@@ -1,128 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-<meta charset="UTF-8">
-
-<title>Ana Jota</title>
-
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Jota</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#sobre"><i class="fas fa-user"></i> Sobre</a></li>
+                <li><a href="#historia"><i class="fas fa-road"></i> Jornada</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projetos"><i class="fas fa-project-diagram"></i> Projetos</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
+    <section id="home">
+        <div class="home-container">
+            <div class="home-text">
+                <h1>Olá, eu sou <span class="highlight">Ana Jota</span></h1>
+                <p class="subtitle">Desenvolvedora Backend e Psicóloga apaixonada por tecnologia e inovação.</p>
+                <p>Transformo ideias em soluções digitais com código limpo e psicologia aplicada à experiência do usuário.</p>
+                <div class="home-buttons">
+                    <a href="#projetos" class="btn-primary">Meus Projetos</a>
+                    <a href="#contato" class="btn-secondary">Fale Comigo</a>
+                </div>
+            </div>
+            <div class="home-img">
+                <div class="profile-image">
+                    <img src="static/img/perfil.jpg" alt="Foto de perfil Ana Jota">
+                </div>
+            </div>
+        </div>
+    </section>
 
-<nav>
+    <section id="sobre">
+        <div class="container">
+            <h2><i class="fas fa-heart"></i> Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou psicóloga formada e estudante de <strong>Engenharia de Software</strong>. Minha paixão pela tecnologia me levou ao desenvolvimento backend, APIs e computação em nuvem.</p>
+                    <p>Combino minha formação em psicologia com programação para criar soluções que realmente funcionam para as pessoas, focando no<strong> Desenvolvimento</strong> mais intuitivo com sistemas escaláveis.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="number">+5</span>
+                        <span>Projetos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">2</span>
+                        <span>Anos experiência em tecnologia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">5+</span>
+                        <span>Formada em Psicologia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<ul>
+    <section id="historia">
+        <div class="container">
+            <h2><i class="fas fa-map"></i> Minha Jornada</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Psicologia</h3>
+                        <p>Formada em psicologia, atuando com a pratica TCC, uma das abordagens mais conhecidas na psicologia.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Transição Tech</h3>
+                        <p>Descobri programação e me apaixonei por resolver problemas reais com código.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Engenharia Software</h3>
+                        <p>Estudando na Faculdade Descomplica, com foco em backend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<li><a href="#home">Home</a></li>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#historia">Minha Jornada</a></li>
-<li><a href="#skills">Habilidades</a></li>
-<li><a href="#projetos">Projetos</a></li>
-<li><a href="#contato">Contato</a></li>
+    <section id="skills">
+        <div class="container">
+            <h2><i class="fas fa-tools"></i> Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-server"></i> APIs REST</li>
+                        <li><i class="fas fa-database"></i> PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps</h3>
+                    <ul>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                        <li><i class="fas fa-cloud"></i> AWS</li>
+                        <li><i class="fas fa-docker"></i> Docker</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML/CSS</li>
+                        <li><i class="fab fa-js-square"></i> JavaScript</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</ul>
+    <section id="projetos">
+        <div class="container">
+            <h2><i class="fas fa-rocket"></i> Projetos</h2>
+            <div class="projetos-grid">
+                <div class="projeto">
+                    <div class="projeto-header">
+                        <h3>API de Saúde Mental</h3>
+                        <span class="tech-tags">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>PostgreSQL</span>
+                        </span>
+                    </div>
+                    <p>Sistema completo para clínicas de psicologia com agendamento, prontuários e dashboards analíticos.</p>
+                    <div class="projeto-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
 
-</nav>
+                <div class="projeto">
+                    <div class="projeto-header">
+                        <h3>Dashboard Psicológico</h3>
+                        <span class="tech-tags">
+                            <span>React</span>
+                            <span>Chart.js</span>
+                            <span>AWS</span>
+                        </span>
+                    </div>
+                    <p>Dashboard interativo para análise de dados de pacientes e evolução terapêutica.</p>
+                    <div class="projeto-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
 
-</header>
+                <div class="projeto">
+                    <div class="projeto-header">
+                        <h3>Sistema de Atendimento</h3>
+                        <span class="tech-tags">
+                            <span>Docker</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </span>
+                    </div>
+                    <p>Plataforma de agendamento online com integração WhatsApp e pagamentos.</p>
+                    <div class="projeto-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section id="home">
+    <section id="contato">
+        <div class="container">
+            <h2><i class="fas fa-paper-plane"></i> Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <p><strong>Email:</strong> contato.anajota@outlook.com</p>
+                    <div class="social-links">
+                        <a href="https://github.com/anajota" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ana-caroline-jota-889b821a5/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:contato.anajota@outlook.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contato-form">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu email" required>
+                    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-<div class="home-container">
+    <footer>
+        <p>&copy; 2026 Ana Jota. Feito com <i class="fas fa-heart"></i></p>
+    </footer>
 
-<div class="home-text">
-<h1>Olá, eu sou Ana</h1>
-
-<p>Desenvolvedora e psicóloga apaixonada por tecnologia.</p>
-</div>
-
-<div class="home-img">
-    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Foto de perfil">
-</div>
-
-</section>
-
-<section id="sobre">
-
-<h2>Sobre mim</h2>
-
-<p>
-Sou psicóloga e estudante de engenharia de software.
-Tenho interesse em desenvolvimento backend,
-APIs e computação em nuvem.
-</p>
-
-</section>
-
-<section id="historia">
-
-<h2>Minha Jornada</h2>
-
-<p>
-Minha jornada na tecnologia começou com o interesse em entender
-como sistemas funcionam e como a programação pode resolver
-problemas reais.
-</p>
-
-</section>
-
-<section id="skills">
-
-<h2>Habilidades</h2>
-
-<ul>
-
-<li>Python</li>
-<li>APIs REST</li>
-<li>Docker</li>
-<li>PostgreSQL</li>
-<li>Git</li>
-
-</ul>
-
-</section>
-
-<section id="projetos">
-
-<h2>Projetos</h2>
-
-{% for repo in repos %}
-
-<div class="projeto">
-
-<h3>{{ repo.name }}</h3>
-
-<p>
-{{ repo.description }}
-</p>
-
-<a href="{{ repo.html_url }}" target="_blank">
-
-Ver projeto no GitHub
-
-</a>
-
-</div>
-
-{% endfor %}
-
-</section>
-
-<section id="contato">
-
-<h2>Contato</h2>
-
-<p>Email: contato.anajota@outlook.com</p>
-
-<a href="https://github.com/anajota">GitHub</a>
-<a href="https://www.linkedin.com/in/ana-caroline-jota-889b821a5/">LinkedIn</a>
-
-</section>
-
+    <script src="script.js"></script>
 </body>
 </html>
